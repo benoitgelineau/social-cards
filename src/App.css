@@ -1,0 +1,122 @@
+#title {
+  text-align: center;
+}
+
+.Card {
+  display: block;
+  width: 90%;
+  max-width: 450px;
+  border: 1px solid black;
+  margin: 10px auto;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* Header */
+.CardHeader {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.CardHeader .profile-thumbnail {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.CardHeader .profile-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.CardHeader .profile-name h3,
+.CardHeader .profile-name h4 {
+  margin: 0;
+}
+
+.CardHeader .profile-name h4 {
+  font-weight: 400;
+}
+
+.CardHeader .follow-btn {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+}
+
+.CardHeader .follow-btn button {
+  font-size: 1.2em;
+  border: 0;
+  border-radius: 4px;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.CardHeader .follow-btn button:hover {
+  color: #55acee;
+}
+
+/* Body */
+.CardBody .post-picture {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.CardBody h4,
+.CardBody p,
+.CardBody .date {
+  margin: 10px;
+}
+
+.CardBody .date {
+  font-size: 0.85em;
+}
+
+.CardBody hr {
+  margin: 15px 0;
+  border-style: solid;
+  opacity: 0.1;
+}
+
+/* Footer */
+.CardFooter {
+  display: flex;
+  align-items: center;
+}
+
+.CardFooter .stats {
+  display: flex;
+  font-size: 16px;
+}
+
+.CardFooter .stats .retweets,
+.CardFooter .stats .likes {
+  margin: 0 5px;
+}
+
+.CardFooter .stats .retweets {
+  color: green;
+}
+
+.CardFooter .stats .likes {
+  color: red;
+}
+
+.CardFooter .btn {
+  margin-left: auto;
+}
+
+.CardFooter .btn button {
+  font-size: 1em;
+  border: 0;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.CardFooter .btn button:hover {
+  color: #55acee;
+}
