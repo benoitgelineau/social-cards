@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const CardFooter = props => (
   
@@ -18,5 +19,10 @@ const CardFooter = props => (
     </div>
   </footer>
 );
+
+CardFooter.propTypes = {
+  retweets: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired
+}
 
 export default CardFooter;

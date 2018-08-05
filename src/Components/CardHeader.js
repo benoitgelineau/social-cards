@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const CardHeader = props => (
 
   <header className="CardHeader">
-    {/*<img className="profile-thumbnail" src={`https://picsum.photos/50?random=${props.post.id}`} alt="Random"/>*/}
+    <img className="profile-thumbnail" src={props.imgUrl} alt="Random"/>
     <div className="profile-name">
       <h3>{props.user.name}</h3>
       <h4>&#64;{props.user.username}</h4>
@@ -13,5 +14,10 @@ const CardHeader = props => (
     </div>
   </header>
 );
+
+CardHeader.propTypes = {
+  user: PropTypes.object.isRequired,
+  imgUrl: PropTypes.string.isRequired
+}
 
 export default CardHeader;
