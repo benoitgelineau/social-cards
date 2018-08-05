@@ -42,7 +42,6 @@ class App extends Component {
 
   render() {
     const { posts, users } = this.state;
-    // console.log(posts, users);
     return (
       <div>
         <h1 id="title">Social Card</h1>
